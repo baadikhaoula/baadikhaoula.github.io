@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Khaoula Baadi – Élève ingénieure Big Data & Cloud</title>
+<meta name="description" content="Portfolio de Khaoula Baadi, élève ingénieure Big Data & Cloud Computing à l’ENSET Mohammedia. Recherche un PFE à partir de janvier 2027.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#eef2f7;--card:#fff;--ink:#14213d;--mute:#516079;--line:#d3dbe8;--acc:#2f5bff;--acc2:#0f9d76;--on:#fff;color-scheme:light}
+:root[data-theme=dark]{--bg:#0e1626;--card:#16213a;--ink:#e8eefc;--mute:#9db0d0;--line:#27365a;--acc:#7b9bff;--acc2:#3ddba8;--on:#0e1626;color-scheme:dark}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{font:400 1rem/1.65 "Public Sans",system-ui,sans-serif;background:var(--bg);color:var(--ink)}
+h1,h2,h3{font-family:"Bricolage Grotesque","Public Sans",sans-serif;line-height:1.1;letter-spacing:-.02em}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--acc);outline-offset:3px;border-radius:4px}
+.w{max-width:1040px;margin:0 auto;padding:0 22px}
+header{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav{display:flex;align-items:center;gap:18px;height:58px}
+nav b{font:800 1.1rem "Bricolage Grotesque",sans-serif;margin-right:auto}
+nav a{text-decoration:none;font-size:.92rem;color:var(--mute);font-weight:500}
+nav a:hover{color:var(--ink)}
+#th{background:none;border:1px solid var(--line);color:var(--ink);border-radius:99px;padding:6px 12px;cursor:pointer;font:inherit;font-size:.85rem}
+.hero{padding:76px 0 54px}
+.hero h1{font-size:clamp(2.8rem,9vw,6rem);font-weight:800}
+.hero .role{font:700 clamp(1.2rem,3vw,1.7rem)/1.3 "Bricolage Grotesque",sans-serif;color:var(--acc);margin-top:14px}
+.hero p{max-width:60ch;margin-top:16px;color:var(--mute);font-size:1.08rem}
+.badge{display:inline-block;margin-top:20px;padding:7px 14px;border-radius:99px;background:var(--acc2);color:var(--on);font-weight:600;font-size:.9rem}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.btn{padding:12px 22px;border-radius:10px;text-decoration:none;font-weight:600;border:2px solid var(--acc)}
+.btn.p{background:var(--acc);color:var(--on)}
+.btn:hover{transform:translateY(-2px)}
+.pipe{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:46px;position:relative}
+.pipe div{background:var(--card);border:1px solid var(--line);padding:16px 14px;font-size:.88rem;color:var(--mute);position:relative}
+.pipe div:first-child{border-radius:12px 0 0 12px}.pipe div:last-child{border-radius:0 12px 12px 0}
+.pipe strong{display:block;font:700 1.05rem "Bricolage Grotesque",sans-serif;color:var(--ink)}
+.pipe i{position:absolute;left:0;bottom:-1px;height:4px;width:22%;background:var(--acc);border-radius:4px;animation:flow 5s ease-in-out 1 forwards}
+@keyframes flow{from{left:0}to{left:78%}}
+section{padding:58px 0}
+h2{font-size:clamp(1.8rem,4vw,2.5rem);margin-bottom:26px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;display:flex;flex-direction:column;gap:10px}
+.card h3{font-size:1.28rem}
+.card p{color:var(--mute);font-size:.96rem}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:auto}
+.tags span,.sk span{font-size:.8rem;padding:3px 10px;border-radius:99px;border:1px solid var(--line);color:var(--ink)}
+.links{display:flex;gap:14px;font-weight:600;font-size:.92rem}
+.links a{color:var(--acc)}
+.soon{font-size:.85rem;color:var(--mute);font-style:italic}
+.meta{font-size:.82rem;color:var(--acc2);font-weight:600}
+.tl{border-left:3px solid var(--acc);padding-left:22px;display:grid;gap:30px}
+.tl h3{font-size:1.25rem}.tl .d{color:var(--mute);font-size:.88rem;margin:2px 0 8px}
+.tl ul{padding-left:18px;color:var(--mute)}
+.sk{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.sk div{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px}
+.sk h3{font-size:1.05rem;margin-bottom:10px}
+.sk p{display:flex;flex-wrap:wrap;gap:6px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:34px}
+ul.plain{list-style:none;padding:0;display:grid;gap:8px;color:var(--mute)}
+ul.plain b{color:var(--ink)}
+footer{padding:50px 0;border-top:1px solid var(--line);text-align:center;color:var(--mute)}
+footer .btns{justify-content:center}
+@media(max-width:760px){.two{grid-template-columns:1fr}.pipe{grid-template-columns:1fr 1fr;gap:8px}.pipe div,.pipe div:first-child,.pipe div:last-child{border-radius:12px}.pipe i{display:none}nav a.h{display:none}}
+@media(prefers-reduced-motion:reduce){.pipe i{animation:none;width:100%}*{scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<header><div class="w"><nav>
+<b>KB</b>
+<a class="h" href="#projets">Projets</a><a class="h" href="#experience">Expérience</a><a class="h" href="#competences">Compétences</a><a href="#contact">Contact</a>
+<button id="th" aria-label="Changer le thème">Mode sombre</button>
+</nav></div></header>
+
+<main>
+<div class="w hero" id="accueil">
+<h1>Khaoula Baadi</h1>
+<div class="role">Élève ingénieure Big Data &amp; Cloud Computing</div>
+<p>Je transforme les données en applications utiles : de la collecte en temps réel au modèle d’IA, puis à l’application web ou mobile qui l’exploite.</p>
+<span class="badge">Recherche un PFE à partir du 1er janvier 2027</span>
+<div class="btns">
+<a class="btn p" href="#projets">Voir mes projets</a>
+<a class="btn" href="cv-khaoula-baadi.pdf" download>Télécharger mon CV</a>
+<a class="btn" href="#contact">Me contacter</a>
+</div>
+<div class="pipe" aria-label="Du flux de données à l’application">
+<div><strong>Collecte</strong>Kafka, MQTT, API</div>
+<div><strong>Traitement</strong>Spark, Airflow, ETL</div>
+<div><strong>Modèles</strong>Scikit-learn, NLP, RAG</div>
+<div><strong>Applications</strong>Spring, Angular, Flutter<i></i></div>
+</div>
+</div>
+
+<section id="apropos"><div class="w two">
+<div><h2>À propos</h2>
+<p style="color:var(--mute)">Élève en dernière année du cycle ingénieur à l’ENSET Mohammedia, je conçois des solutions complètes : pipelines Big Data, services API, modèles de Machine Learning, tableaux de bord et applications mobiles. Curieuse, rigoureuse et orientée résultats, je cherche un PFE pour contribuer à un projet concret en Full-Stack, Mobile, Data ou IA.</p></div>
+<div><h2>Formation</h2>
+<ul class="plain">
+<li><b>Cycle ingénieur, Big Data &amp; Cloud Computing</b><br>ENSET Mohammedia, 2024–2027</li>
+<li><b>Classes préparatoires (TSI)</b><br>CPGE Lycée Selmane Al-Farissi, Salé, 2022–2024</li>
+<li><b>Baccalauréat Sciences et Technologies Électriques</b><br>Lycée Prince Moulay Abdellah, 2019–2022</li>
+</ul></div></div></section>
+
+<section id="projets"><div class="w"><h2>Projets</h2><div class="grid" id="pj"></div></div></section>
+
+<section id="experience"><div class="w"><h2>Expérience</h2>
+<div class="tl">
+<div><h3>NTT DATA Morocco Centers</h3><div class="d">Stage professionnel · Tétouan · juil.–sept. 2026</div>
+<ul><li>Conception d’une plateforme Big Data hybride de supervision d’infrastructures IT.</li>
+<li>Pipelines de collecte et de traitement avec Kafka, services API avec FastAPI, données dans PostgreSQL.</li>
+<li>Modèles Scikit-learn pour la détection d’anomalies et l’analyse prédictive.</li>
+<li>Tableaux de bord Power BI et interface mobile Flutter, sur infrastructure VMware.</li></ul></div>
+<div><h3>FD Solutions</h3><div class="d">Stage professionnel · Tétouan · juil.–août 2025</div>
+<ul><li>Application web de collecte et de gestion des feedbacks clients.</li>
+<li>Module NLP d’analyse automatique des sentiments (positif, négatif, neutre).</li></ul></div>
+</div></div></section>
+
+<section id="competences"><div class="w"><h2>Compétences</h2><div class="sk" id="sk"></div></div></section>
+
+<section id="certifs"><div class="w"><h2>Certifications et langues</h2><div class="two">
+<ul class="plain">
+<li><b>AWS Academy</b> Data Engineering</li>
+<li><b>Oracle</b> Cloud Native Development OCI</li>
+<li><b>Cisco</b> CCNA Introduction to Networks, Cybersecurity Essentials, IoT avec Packet Tracer, English for IT 2</li>
+<li><b>Linux Essentials</b> et <b>Python Essentials 1 et 2</b></li>
+</ul>
+<ul class="plain"><li><b>Arabe</b> langue maternelle</li><li><b>Français</b> bilingue</li><li><b>Anglais</b> bilingue</li></ul>
+</div></div></section>
+</main>
+
+<footer id="contact"><div class="w">
+<h2>Travaillons ensemble</h2>
+<p>Je recherche un PFE à partir de janvier 2027.</p>
+<div class="btns">
+<a class="btn p" href="mailto:baadikhaoula38@gmail.com">baadikhaoula38@gmail.com</a>
+<a class="btn" href="https://www.linkedin.com/in/khaoula-baadi-59b3613b5/" target="_blank" rel="noopener">LinkedIn</a>
+<a class="btn" href="https://github.com/baadikhaoula" target="_blank" rel="noopener">GitHub</a>
+</div>
+<p style="margin-top:30px;font-size:.85rem">© 2026 Khaoula Baadi</p>
+</div></footer>
+
+<script>
+const G="https://github.com/baadikhaoula/";
+const P=[
+["Plateforme Big Data hybride de supervision IT","Stage NTT DATA · 2026","Supervision d’infrastructures IT, détection d’anomalies et analyse prédictive, avec API, tableaux de bord et application mobile.",["Python","Kafka","PostgreSQL","FastAPI","Scikit-learn","Power BI","Flutter"],"plateforme-supervision-bigdata"],
+["TrustGuard AI","Projet · 2025–2026","Plateforme d’IA qui évalue la confiance numérique de façon dynamique et détecte les comportements suspects.",["Python","Machine Learning","FastAPI"],"trustguard-ai"],
+["Gestion des feedbacks clients et analyse de sentiments","Stage FD Solutions · 2025","Application web de collecte des avis clients avec classification automatique des sentiments par NLP.",["Python","NLP","Machine Learning","JavaScript"],"feedback-management-app"],
+["Plateforme Big Data Batch pour le pilotage académique","Projet · 2025–2026","Orchestration de pipelines de données académiques, traitement distribué et tableaux de bord décisionnels.",["Python","Airflow","Kafka","Spark","Superset"]],
+["Digital Banking avec assistant conversationnel IA","Projet · 2025–2026","Application bancaire : clients, comptes, opérations, authentification JWT et assistant basé sur le RAG.",["Java","Spring Boot","Spring Security","JWT","Angular"]],
+["AI Study Assistant","Projet · 2025–2026","Application Android de prise de notes et de planification, avec un assistant IA pour des explications personnalisées.",["Java","Android","Firebase","Material Design"]]
+];
+document.getElementById("pj").innerHTML=P.map(p=>`<article class="card"><span class="meta">${p[1]}</span><h3>${p[0]}</h3><p>${p[2]}</p><div class="tags">${p[3].map(t=>`<span>${t}</span>`).join("")}</div>${p[4]?`<div class="links"><a href="${G+p[4]}" target="_blank" rel="noopener">Code sur GitHub</a></div>`:`<div class="soon">Code bientôt sur GitHub</div>`}</article>`).join("");
+const S={"Big Data":["Hadoop","HDFS","Spark","Kafka","Airflow","ETL"],"IA et Data":["Machine Learning","Deep Learning","NLP","Scikit-learn","TensorFlow","Pandas","NumPy"],"Cloud et DevOps":["AWS","Azure","Docker","Kubernetes","VMware","Linux","Git"],"Backend":["Java","Spring Boot","JPA","Spring Security","JWT","REST","Swagger","Python","FastAPI"],"Frontend":["Angular","React","TypeScript","JavaScript","HTML5","CSS3","Bootstrap"],"Mobile":["Flutter","Dart","Android","Firebase"],"Bases de données":["PostgreSQL","MySQL","SQL Server","SQLite","Firestore"],"BI et IoT":["Power BI","Superset","MQTT","Excel avancé"]};
+document.getElementById("sk").innerHTML=Object.entries(S).map(([k,v])=>`<div><h3>${k}</h3><p class="tags">${v.map(t=>`<span>${t}</span>`).join("")}</p></div>`).join("");
+const r=document.documentElement,b=document.getElementById("th");
+function set(t){r.dataset.theme=t;b.textContent=t==="dark"?"Mode clair":"Mode sombre"}
+let t;try{t=localStorage.getItem("theme")}catch(e){}
+set(t||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"));
+b.onclick=()=>{const n=r.dataset.theme==="dark"?"light":"dark";set(n);try{localStorage.setItem("theme",n)}catch(e){}};
+</script>
+</body>
+</html>
